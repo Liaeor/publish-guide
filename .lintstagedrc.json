@@ -1,0 +1,5 @@
+{
+  "*.ts": ["tsc --noEmit", "prettier --check"],
+  "*.tsx": ["tsc --noEmit", "prettier --check"],
+  "*.{json,md,yaml}": ["prettier --check"]
+}

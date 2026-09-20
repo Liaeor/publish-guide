@@ -1,0 +1,16 @@
+{
+  "name": "publish-guide",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:utils": "pnpm --filter @publish-guide/utils run build",
+    "build:ui": "pnpm --filter @publish-guide/ui run build",
+    "test": "pnpm -r run test",
+    "release": "changeset publish",
+    "version": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0"
+  }
+}
